@@ -40,7 +40,7 @@ $ yarn start
 }
 ```
 
-+ addAuthor
++ addAuthor (query + graphql variable)
 ```
 mutation AddAuthor ($input: addAuthorInput) {
   addAuthor(input: $input) {
@@ -48,8 +48,15 @@ mutation AddAuthor ($input: addAuthorInput) {
   }
 }
 ```
+```
+{
+  "input": {
+    "name": "add author test"
+  }
+}
+```
 
-+ updateAuthor
++ updateAuthor (query + graphql variable)
 ```
 mutation UpdateAuthor ($input: updateAuthorInput) {
   updateAuthor(input: $input) {
@@ -58,6 +65,14 @@ mutation UpdateAuthor ($input: updateAuthorInput) {
   }
 }
 ```
+```
+{
+  "input": {
+    "name": "update author test"
+  }
+}
+```
+
 
 + deleteAuthor
 ```
