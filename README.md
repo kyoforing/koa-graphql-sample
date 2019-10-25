@@ -42,7 +42,7 @@ $ yarn start
 
 + addAuthor (query + graphql variable)
 ```
-mutation AddAuthor ($input: addAuthorInput) {
+mutation ($input: addAuthorInput) {
   addAuthor(input: $input) {
     id
   }
@@ -58,7 +58,7 @@ mutation AddAuthor ($input: addAuthorInput) {
 
 + updateAuthor (query + graphql variable)
 ```
-mutation UpdateAuthor ($input: updateAuthorInput) {
+mutation ($input: updateAuthorInput) {
   updateAuthor(input: $input) {
     id
     name
